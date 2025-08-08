@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background: linear-gradient(#dff2ff, #a0c4ff);
+  text-align: center;
+  padding: 2em;
+  transition: background 1s ease;
+}
+
+#app {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+label, input {
+  display: block;
+  margin: 0.5em auto;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  margin: 1em 0.5em;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffafcc;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff88aa;
+}
+
+#alarmMessage, #alarmSetDisplay {
+  font-size: 1.3em;
+  margin-top: 1em;
+  min-height: 1.5em;
+}
+
+#guiltEmoji {
+  font-size: 3em;
+  margin-top: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+#gameContainer {
+  margin-top: 2em;
+}
+
+canvas {
+  background: linear-gradient(135deg, #a0c4ff, #dff2ff);
+  border: 4px solid #ffafcc;
+  border-radius: 15px;
+}
+
+.snake {
+  fill: #ff6f91;
+}
+
+.food {
+  fill: #ffcc00;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apology Alarm Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="mascot">⏰</div>
+    <h1>Apology Alarm Clock</h1>
+
+    <label for="alarmTime">Set Alarm:</label>
+    <input type="time" id="alarmTime" />
+
+    <label for="alarmSound">Choose Sound:</label>
+    <input type="file" id="alarmSound" accept="audio/mp3, audio/wav, audio/*" />
+
+    <label for="snoozeDuration">Snooze Duration (mins):</label>
+    <input type="number" id="snoozeDuration" min="1" value="1" />
+
+    <button id="setAlarm">Set Alarm</button>
+
+    <div id="alarmSetDisplay"></div>
+    <div id="alarmMessage"></div>
+    <div id="guiltEmoji">🥺</div>
+
+    <div id="controls">
+      <button id="snoozeBtn" class="hidden">Snooze</button>
+      <button id="stopBtn" class="hidden">Stop</button>
+    </div>
+
+    <div id="gameContainer" class="hidden">
+      <h2>Inverted Snake — eat the red square to stop the alarm</h2>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+
+    <div id="intervention" class="hidden">🎹 Calling your mom… 📞</div>
+  </div>
+
+  <audio id="player" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
